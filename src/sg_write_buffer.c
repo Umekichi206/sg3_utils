@@ -467,7 +467,7 @@ main(int argc, char * argv[])
                 pch = strtok((char*)read_buf, ",. \n\t");
                 while (pch != NULL) {
                     val = sg_get_num_nomult(pch);
-                    if (val >= 0 && val < 255) {
+                    if (val >= 0 && val <= 255) {
                         dop[res] = val;
                         res++;
                     } else {
